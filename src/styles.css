@@ -51,6 +51,8 @@ li
 }
 li.active 
 {
+    color: red;
+
     border-bottom: 5px solid red;
 }
 .content
@@ -79,9 +81,10 @@ li.active
 }
 .home-2
 {
+    background-color: black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 40%;
     height: 100%;
@@ -91,15 +94,20 @@ li.active
 }
 .heading
 {
-    font-size: 40px;
+    color:wheat;
+    font-size: 45px;
     text-align: center;
     padding: 30px;
+    font-weight: bold;
 }
 .sub-heading
 {
+    color:wheat;
+    padding: 50px;
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 700;
+    text-align: center;
 }
 .sub-content
 {

@@ -12,6 +12,8 @@ export function home()
 
     const div2=document.createElement("div");
     div2.classList.add("home-2");
+    const txt=document.createElement("div");
+    div2.appendChild(txt);
 
     const BiryaniImg=new Image();
     BiryaniImg.src=Biryani;
@@ -21,20 +23,30 @@ export function home()
     
 
     const heading=document.createElement("p");
-    heading.innerText="BIRYANIWALLAH \n & \n CO©";
+    heading.innerText="BIRYANIWALLA \n & \n CO©";
     heading.classList.add("heading");
-    div2.appendChild(heading);
+    txt.appendChild(heading);
 
-    const subheading=document.createElement("p");
-    subheading.innerText="The pride of Hyderabad";
-    subheading.style.fontFamily="font-family: 'Dancing Script', cursive;";
-    subheading.classList.add("sub-heading");
-    div2.appendChild(subheading);
+    const subheading1=document.createElement("p");
+    subheading1.innerText="The pride of Hyderabad";
+    subheading1.style.fontFamily="font-family: 'Dancing Script', cursive;";
+    subheading1.classList.add("sub-heading");
+    txt.appendChild(subheading1);
+
+
+    const subheading2=document.createElement("p");
+    subheading2.innerText="At the heart of India's favourite biryani full of flavours to savour, our biryanis are the result of our art of quality.";
+    subheading2.style.fontWeight="400";
+    subheading2.style.textAlign="center";
+    subheading2.style.color="wheat";
+    subheading2.style.padding="50px"
+    
+    txt.appendChild(subheading2);
 
 
     home.appendChild(div1);
     home.appendChild(div2);
-    div1.appendChild(BiryaniImg);
+    div1.appendChild(BiryaniImg);  
     return mainhome;
 }
 

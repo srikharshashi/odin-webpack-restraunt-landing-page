@@ -1,6 +1,10 @@
 import "./styles.css";
 import { home } from "./home";
 
+
+
+
+
 const body=document.querySelector(".main-content");
 const content=document.createElement("div");
 content.classList.add("content");
