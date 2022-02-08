@@ -1,6 +1,10 @@
 import "./styles.css";
-const body=document.querySelector(".body");
-const navbar=document.createElement("div");
+import { home } from "./home";
+
+const body=document.querySelector(".main-content");
+const content=document.createElement("div");
+content.classList.add("content");
+const navbar=document.createElement("nav");
 navbar.classList.add("nav");
 const ul=document.createElement("ul");
 const li1=document.createElement("li");
@@ -24,30 +28,38 @@ ul.appendChild(li2);
 ul.appendChild(li3);
 ul.appendChild(li4);
 navbar.appendChild(ul);
-body.appendChild(navbar);
 
-const homecontent=document.createElement("div");
+
+body.appendChild(navbar);
+body.appendChild(content);
+
+const homecontent=home();
 homecontent.setAttribute("id","home");
-homecontent.classList.add("content");
+homecontent.classList.add("sub-content");
+
 const menucontent=document.createElement("div");
 menucontent.setAttribute("id","menu");
-menucontent.classList.add("content");
+menucontent.classList.add("sub-content");
+
 const aboutcontent=document.createElement("div");
 aboutcontent.setAttribute("id","about");
-aboutcontent.classList.add("content");
+aboutcontent.classList.add("sub-content");
+
 const contactcontent=document.createElement("div");
 contactcontent.setAttribute("id","contact");
-contactcontent.classList.add("content");
-homecontent.innerText="Home";
+contactcontent.classList.add("sub-content");
+
 menucontent.innerText="Menu";
 aboutcontent.innerText="About";
 contactcontent.innerText="Contact";
+
 const tabcontents=[homecontent,menucontent,aboutcontent,contactcontent];
 homecontent.classList.add("active");
-body.appendChild(homecontent);
-body.appendChild(menucontent);
-body.appendChild(aboutcontent);
-body.appendChild(contactcontent);
+
+content.appendChild(homecontent);
+content.appendChild(menucontent);
+content.appendChild(aboutcontent);
+content.appendChild(contactcontent);
 
 
 li1.classList.add("active");
