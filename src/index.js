@@ -1,6 +1,6 @@
 import "./styles.css";
 import { home } from "./home";
-
+import { menu } from "./menu";
 
 
 
@@ -41,7 +41,7 @@ const homecontent=home();
 homecontent.setAttribute("id","home");
 homecontent.classList.add("sub-content");
 
-const menucontent=document.createElement("div");
+const menucontent=menu();
 menucontent.setAttribute("id","menu");
 menucontent.classList.add("sub-content");
 
@@ -53,7 +53,6 @@ const contactcontent=document.createElement("div");
 contactcontent.setAttribute("id","contact");
 contactcontent.classList.add("sub-content");
 
-menucontent.innerText="Menu";
 aboutcontent.innerText="About";
 contactcontent.innerText="Contact";
 
