@@ -1,4 +1,4 @@
-import Biryani from "./biryani.jpg";
+import Biryani from "./img/biryani.jpg";
 
 export function home()
 {
