@@ -1,9 +1,8 @@
 import "./styles.css";
 import { home } from "./home";
 import { menu } from "./menu";
-
-
-
+import { about } from "./about";
+import { contact } from "./contact";
 
 const body=document.querySelector(".main-content");
 const content=document.createElement("div");
@@ -45,16 +44,14 @@ const menucontent=menu();
 menucontent.setAttribute("id","menu");
 menucontent.classList.add("sub-content");
 
-const aboutcontent=document.createElement("div");
+const aboutcontent=about();
 aboutcontent.setAttribute("id","about");
 aboutcontent.classList.add("sub-content");
 
-const contactcontent=document.createElement("div");
+const contactcontent=contact();
 contactcontent.setAttribute("id","contact");
 contactcontent.classList.add("sub-content");
 
-aboutcontent.innerText="About";
-contactcontent.innerText="Contact";
 
 const tabcontents=[homecontent,menucontent,aboutcontent,contactcontent];
 homecontent.classList.add("active");

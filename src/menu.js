@@ -3,6 +3,10 @@ import C65 from "./img/chic65.jpg";
 import CBiryani from "./img/chicbiryani.jpg";
 import MBiryani from "./img/muttonbiryani.jpeg";
 import KBiryani from "./img/keemabiryani.jpg";
+import gajar from "./img/gajar.jpg";
+import naan from "./img/garlicnaan.jpg";
+import kebab from "./img/kabab.jpg";
+import paneer from "./img/paneer.jpg";
 
 function getimagelist()
 {
@@ -17,6 +21,20 @@ function getimagelist()
 
     return [ChickenBiryani,muttonbiryani,Keema,C65Biryani];
 }
+function getimageList2()
+{
+    const Naan=new Image();
+    Naan.src=naan;
+    const Paneer =new Image();
+    Paneer.src=paneer;
+    const Kebab=new Image()
+    Kebab.src=kebab;
+    const halwa=new Image();
+    halwa.src=gajar;
+
+    return [Naan,Paneer,Kebab,halwa];
+}
+
 
 function getstar()
 {
@@ -47,13 +65,6 @@ function getmenuitem(name,image)
     }
     itempt2.appendChild(stars);
 
-
-    
-
-
-
-
-
     item.appendChild(itempt1);
 
     item.appendChild(itempt2);
@@ -83,6 +94,8 @@ export function menu()
     imgdiv.appendChild(menutitle)
     menucontent.appendChild(imgdiv);
     const menu2=document.createElement("div");
+
+
     menu2.classList.add("menu2");
     menucontent.appendChild(menu2);
 
@@ -94,14 +107,15 @@ export function menu()
     menucont2.classList.add("menucont2");
     menu2.appendChild(menucont2);
 
-    const itemslist=["Zafrani Chicken Biryani","Zafrani Mutton Biryani","Zafrani Keema Biryani","Zafrani Chicken 65"];
-    
-
+    const itemslist=["Zafrani Chicken Biryani","Zafrani Mutton Biryani","Zafrani Keema Biryani","Zafrani Chicken 65 Biryani"];
+    const itemslist2=["Garlic Naan","Paneer Butter Masala","Mutton Kebab","Gajar Ka Halwa"];
+    const imageslist2=getimageList2();
     const imageslist=getimagelist();
 
     for(let i=0;i<4;i++)
     {
         menucont1.appendChild(getmenuitem(itemslist[i],imageslist[i]));
+        menucont2.appendChild(getmenuitem(itemslist2[i],imageslist2[i]));
     }
 
 

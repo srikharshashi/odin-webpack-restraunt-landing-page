@@ -9,11 +9,11 @@ html,body {
     height:100%;
     width: 100%;
 }
+
 .main-content
 {
     /* border: 10px solid green; */
     height: 100%;
-
 }
 
 
@@ -180,7 +180,9 @@ li.active
 .menucont2
 {
     padding: 10px;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     position: absolute;
     /* border: 2px solid blue; */
     height: 70%;
@@ -225,4 +227,325 @@ li.active
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+.mainabout
+{
+    position: relative;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+        /* border: 1px solid red; */
+
+}
+.logo
+{
+    position: absolute;
+    left: 85%;
+    top:2%;
+}
+
+.logo img
+{
+    height: 100px;
+    width: 210px;
+}
+.aboutcont
+{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+
+}
+.abcont1
+{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    width: 100%;
+}
+.abcont11
+{
+    padding: 10px;
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.abcont12
+{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.heading2
+{
+    color:wheat;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    align-self:baseline;
+    /* border: 1px solid red; */
+
+}
+.abtext
+{
+    color:rgb(143, 139, 133);
+    font-size: 15px;
+    text-align: center;
+    font-weight:700;
+    text-align: left;
+    /* align-self: center; */
+}
+.abtext2
+{
+    color:rgb(143, 139, 133);
+    font-size: 15px;
+    /* text-align: center; */
+    font-weight:700;
+    /* text-align: left; */
+    /* align-self: center; */
+}
+.abcont2
+{
+    /* margin: 20px; */
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+.abcont21
+{
+    margin: 10px;
+    padding: 10px;
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.abcont22
+{
+    /* border: 2px solid greenyellow; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;    
+
+}
+
+.heading21
+{
+    color:wheat;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    /* align-self:center; */
+    /* border: 1px solid red; */
+}
+
+.abcont224
+{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.smolabtcont
+{
+    width: 30%;
+    height: 40%;
+    border: 1px solid red;
+    border-radius: 15px;
+
+}
+
+.abcont221
+{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.abcont222
+{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.abcont223
+{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.smolabtcont p
+{
+    color:wheat;
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+    align-self:center;
+}
+.main-contact
+{
+    height: 100%;
+    width: 100%;
+    background: black;
+}
+
+.contactin
+{
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact1
+{
+    /* border: 1px solid red; */
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.contact2
+{
+    /* border: 1px solid red; */
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.headingc1
+{
+    color:wheat;
+    font-size: 45px;
+    font-weight: 600;
+    /* font-weight: 600; */
+    padding: 30px;
+    font-weight: bold;
+}
+
+.headingc2
+{
+    color:wheat;
+    font-size: 25px;
+    text-align: center;
+    padding: 30px;
+    font-weight: 200;
+    align-self:flex-start;
+}
+
+.headingc3
+{
+    color:rgb(235, 72, 50);
+    font-size: 28px;
+    text-align: center;
+    padding: 30px;
+    font-weight: 400;
+    align-self:flex-start;
+}
+
+.headingc4
+{
+    color:wheat;
+    font-size: 28px;
+    text-align: center;
+    
+    font-weight: 400;
+    /* align-self:flex-start; */
+}
+
+.contact3
+{
+    /* border: 1px solid green; */
+    height: 100%;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+.contact4
+{
+    /* border: 1px solid gray; */
+    height: 100%;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.map
+{
+    /* align-self: center; */
+    width: 85%;
+    height: 85%;
+}
+.contact3 label
+{
+    font-size:15px ;
+    color: beige;
+}
+
+.contact3 input
+{
+    padding: 10px;
+    border: 1px solid wheat;
+    border-radius: 10px;
+}
+
+
+.descip
+{
+    padding: 5px;
+    height: 30%;
+    width: 40%;
+}
+
+.contact3 input[type=submit]
+{
+    
+    padding: 10px;
 }
