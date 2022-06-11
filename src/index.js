@@ -9,6 +9,8 @@ const content=document.createElement("div");
 content.classList.add("content");
 const navbar=document.createElement("nav");
 navbar.classList.add("nav");
+
+
 const ul=document.createElement("ul");
 const li1=document.createElement("li");
 const li2=document.createElement("li");

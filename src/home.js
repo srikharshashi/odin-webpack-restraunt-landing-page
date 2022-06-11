@@ -23,7 +23,7 @@ export function home()
     
 
     const heading=document.createElement("p");
-    heading.innerText="BIRYANIWALLA \n & \n CO©";
+    heading.innerText="BIRYANIWALLAH \n & \n CO©";
     heading.classList.add("heading");
     txt.appendChild(heading);
 
